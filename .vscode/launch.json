@@ -14,11 +14,21 @@
       "request": "launch",
       "name": "Launch Node Express via NPM",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run-script", "node:debug"],
+      "runtimeArgs": [
+        "run-script",
+        "node:debug"
+      ],
       "port": 9229
     },
     {
       "name": "Attach to Functions",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "preLaunchTask": "func: host start"
+    },
+    {
+      "name": "Attach to Node Functions",
       "type": "node",
       "request": "attach",
       "port": 9229,
