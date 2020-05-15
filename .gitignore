@@ -351,3 +351,4 @@ MigrationBackup/
 
 # angular files
 dist/
+functions/azure-functions-core-tools/
